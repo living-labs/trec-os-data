@@ -2,7 +2,7 @@
 
 This repository contains the TREC OpenSearch data set which contains raw queries, documents to be ranked and clicks that were measured during the run of the TREC OpenSearch competition.
 
-The data set contains several json files:
+The data set contains the following files:
     
     trecos.tar.gz
     ├── 2016
@@ -33,11 +33,9 @@ The data set contains several json files:
             ├── round2_test.json
             └── round2_train.json
 
-Each file contains line-separated json entries representing different things:
-
 ## Documents
 
-The `docs.json` files contain on each line a json object representing a document, which look like:
+The `docs.json` files contain line-separated json objects representing the documents:
 
     {
       "docid": "ssoar-d1",
@@ -55,11 +53,11 @@ The `docs.json` files contain on each line a json object representing a document
       }
     }
     
-Where the docid is the document identifier and the content is a json object representing the content of the document. The internal structure of the contents is dependent on the metadata available and different for SSOAR and CiteSeerX.
+The `docid` is the document identifier and the `content` field contains a json object representing the contents of the document. The internal structure of the `content` field is dependent on the metadata available and different for SSOAR and CiteSeerX.
 
 ## Queries
 
-The `queries.json` files contain on each line a json object representing a query, which look like:
+The `queries.json` files contain line-separated json objects representing the queries:
 
     {
       "qid": "ssoar-q1",
@@ -72,7 +70,7 @@ The `queries.json` files contain on each line a json object representing a query
       ]
     }
     
-Where the qid is the query identifier, qstr is the raw query string and doclist is a list of docids for the candidate documents to be ranked.
+Where the `qid` is the query identifier, `qstr` is the raw query string and `doclist` is a list of document identifiers for the candidate documents to be ranked.
 
 ## Clicks
 
