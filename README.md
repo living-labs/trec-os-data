@@ -2,7 +2,7 @@
 
 This repository contains the TREC OpenSearch data set which contains raw queries, documents to be ranked and clicks that were measured during the run of the TREC OpenSearch competition in 2016 and 2017.
 
-You can download the data set [here](http://ilps.science.uva.nl/trec-os/trecos.tar.gz). The archive contains the following files:
+You can download the data set [here](https://gustav1.ux.uis.no/downloads/trec-os/trecos.tar.gz). The archive contains the following files:
     
     trecos.tar.gz
     ├── 2016
